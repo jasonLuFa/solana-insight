@@ -67,11 +67,12 @@ export default function HistoryTransaction() {
       {transactions ? (
         transactions.map((transaction, index) => (
           <div key={index}>
-            <p className='text text-xs'> {transaction.blockTime}</p>
-            <p className='text text-xs'> {transaction.confirmationStatus}</p>
-            <p className='text text-xs'> {transaction.memo}</p>
-            <p className='text text-xs'> {transaction.signature}</p>
-            <p className='text text-xs'> {transaction.slot}</p>
+            <br />
+            <p className='text text-xs'><p className=' text-red-500'>signature :</p> {transaction.signature}</p>
+            <p className='text text-xs'><p className=' text-red-500'>blockTime :</p> {transaction.blockTime}</p>
+            <p className='text text-xs'><p className=' text-red-500'>confirmationStatus :</p> {transaction.confirmationStatus}</p>
+            <p className='text text-xs'><p className=' text-red-500'>memo :</p> {transaction.memo}</p>
+            <p className='text text-xs'><p className=' text-red-500'>slot :</p> {transaction.slot}</p>
           </div>
         ))
       ) : (

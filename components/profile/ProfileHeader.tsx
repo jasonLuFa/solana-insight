@@ -1,8 +1,8 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import Balance from "@/components/profile/Balance";
 import {  useParams } from 'next/navigation';
+import HistoryTransaction from "./HistoryTransaction";
 
 
 function ProfileHeader() {
@@ -21,30 +21,9 @@ function ProfileHeader() {
               />
             </div>
             <p>address : {pathParams.address}</p>
-            {/* <Balance address={pathParams.address as string}/> */}
+            <HistoryTransaction/>
           </div>
-
-          {/* <div className='flex-1'>
-            <h2 className='text-left text-heading3-bold text-light-1'>
-              {address}
-            </h2>
-            <p className='text-base-medium text-gray-1'>addr : {address}</p>
-          </div> */}
         </div>
-        {/* {accountId === authUserId && type !== "Community" && (
-          <Link href='/profile/edit'>
-            <div className='flex cursor-pointer gap-3 rounded-lg bg-dark-3 px-4 py-2'>
-              <Image
-                src='/assets/edit.svg'
-                alt='logout'
-                width={16}
-                height={16}
-              />
-
-              <p className='text-light-2 max-sm:hidden'>Edit</p>
-            </div>
-          </Link>
-        )} */}
       </div>
 
       {/* <p className='mt-6 max-w-lg text-base-regular text-light-2'>{bio}</p> */}

@@ -8,7 +8,6 @@ async function Page() {
   return (
     <section>
       <ProfileHeader/>
-      <HistoryTransaction/>
     </section>
   )
 }
