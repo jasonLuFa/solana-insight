@@ -1,4 +1,3 @@
-import Balance from "@/components/profile/Balance";
 import Moralis from 'moralis';
 import {  useEffect } from 'react';
 
